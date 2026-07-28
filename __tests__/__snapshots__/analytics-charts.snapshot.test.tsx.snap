@@ -1,0 +1,1505 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Storybook snapshots — AnalyticsCharts (visual regression baselines) > Compact 1`] = `
+<div
+  animate="[object Object]"
+  initial="[object Object]"
+  transition="[object Object]"
+>
+  <div
+    class="mb-6 grid gap-6 lg:grid-cols-2"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Portfolio Growth
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Portfolio growth over time. 6 data points — Jan: $10,000; Feb: $28,000; Mar: $45,000; Apr: $72,000; May: $95,000; Jun: $130,000."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Yield Earned
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Monthly yield earned. 6 data points — Jan: $150; Feb: $420; Mar: $680; Apr: $1,100; May: $1,600; Jun: $2,200."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="grid gap-6 lg:grid-cols-3"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Risk Distribution
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Risk distribution across portfolio. 4 segments — A: 45%; B: 30%; C: 15%; D: 10%."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+        <div
+          class="mt-4 space-y-1.5"
+        >
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(34, 197, 94);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                A
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              45
+              %
+            </span>
+          </button>
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(234, 179, 8);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                B
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              30
+              %
+            </span>
+          </button>
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(249, 115, 22);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                C
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              15
+              %
+            </span>
+          </button>
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(239, 68, 68);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                D
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              10
+              %
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm lg:col-span-2"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Return Rate
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Monthly return rate. 6 data points — Jan: 1.5%; Feb: 1.8%; Mar: 2.1%; Apr: 1.9%; May: 2.4%; Jun: 2.6%."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook snapshots — AnalyticsCharts (visual regression baselines) > EmptyState 1`] = `
+<div
+  animate="[object Object]"
+  initial="[object Object]"
+  transition="[object Object]"
+>
+  <div
+    class="mb-6 grid gap-6 lg:grid-cols-2"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Portfolio Growth
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          class="flex h-56 flex-col items-center justify-center gap-2 text-center"
+        >
+          <svg
+            class="lucide lucide-trending-up h-8 w-8 text-muted-foreground"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="22 7 13.5 15.5 8.5 10.5 2 17"
+            />
+            <polyline
+              points="16 7 22 7 22 13"
+            />
+          </svg>
+          <p
+            class="text-sm text-muted-foreground"
+          >
+            No portfolio data yet
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Yield Earned
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          class="flex h-56 flex-col items-center justify-center gap-2 text-center"
+        >
+          <svg
+            class="lucide lucide-trending-up h-8 w-8 text-muted-foreground"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="22 7 13.5 15.5 8.5 10.5 2 17"
+            />
+            <polyline
+              points="16 7 22 7 22 13"
+            />
+          </svg>
+          <p
+            class="text-sm text-muted-foreground"
+          >
+            No yield data yet
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="grid gap-6 lg:grid-cols-3"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Risk Distribution
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          class="flex h-56 flex-col items-center justify-center gap-2 text-center"
+        >
+          <svg
+            class="lucide lucide-trending-up h-8 w-8 text-muted-foreground"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="22 7 13.5 15.5 8.5 10.5 2 17"
+            />
+            <polyline
+              points="16 7 22 7 22 13"
+            />
+          </svg>
+          <p
+            class="text-sm text-muted-foreground"
+          >
+            No risk data yet
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm lg:col-span-2"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Return Rate
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          class="flex h-56 flex-col items-center justify-center gap-2 text-center"
+        >
+          <svg
+            class="lucide lucide-trending-up h-8 w-8 text-muted-foreground"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="22 7 13.5 15.5 8.5 10.5 2 17"
+            />
+            <polyline
+              points="16 7 22 7 22 13"
+            />
+          </svg>
+          <p
+            class="text-sm text-muted-foreground"
+          >
+            No return data yet
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook snapshots — AnalyticsCharts (visual regression baselines) > IsLoading 1`] = `
+<div
+  animate="[object Object]"
+  initial="[object Object]"
+  transition="[object Object]"
+>
+  <div
+    class="mb-6 grid gap-6 lg:grid-cols-2"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Portfolio Growth
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          class="flex items-center justify-center"
+          style="height: 240px;"
+        >
+          <div
+            class="rounded-md bg-zinc-800/60 bg-[length:200%_100%] bg-gradient-to-r from-zinc-800/60 via-zinc-700/40 to-zinc-800/60 animate-shimmer h-full w-full"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Yield Earned
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          class="flex items-center justify-center"
+          style="height: 240px;"
+        >
+          <div
+            class="rounded-md bg-zinc-800/60 bg-[length:200%_100%] bg-gradient-to-r from-zinc-800/60 via-zinc-700/40 to-zinc-800/60 animate-shimmer h-full w-full"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="grid gap-6 lg:grid-cols-3"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Risk Distribution
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          class="flex items-center justify-center"
+          style="height: 180px;"
+        >
+          <div
+            class="rounded-md bg-zinc-800/60 bg-[length:200%_100%] bg-gradient-to-r from-zinc-800/60 via-zinc-700/40 to-zinc-800/60 animate-shimmer h-full w-full"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm lg:col-span-2"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Return Rate
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          class="flex items-center justify-center"
+          style="height: 240px;"
+        >
+          <div
+            class="rounded-md bg-zinc-800/60 bg-[length:200%_100%] bg-gradient-to-r from-zinc-800/60 via-zinc-700/40 to-zinc-800/60 animate-shimmer h-full w-full"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook snapshots — AnalyticsCharts (visual regression baselines) > PartialData 1`] = `
+<div
+  animate="[object Object]"
+  initial="[object Object]"
+  transition="[object Object]"
+>
+  <div
+    class="mb-6 grid gap-6 lg:grid-cols-2"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Portfolio Growth
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Portfolio growth over time. 6 data points — Jan: $10,000; Feb: $28,000; Mar: $45,000; Apr: $72,000; May: $95,000; Jun: $130,000."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Yield Earned
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          class="flex h-56 flex-col items-center justify-center gap-2 text-center"
+        >
+          <svg
+            class="lucide lucide-trending-up h-8 w-8 text-muted-foreground"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="22 7 13.5 15.5 8.5 10.5 2 17"
+            />
+            <polyline
+              points="16 7 22 7 22 13"
+            />
+          </svg>
+          <p
+            class="text-sm text-muted-foreground"
+          >
+            No yield data yet
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="grid gap-6 lg:grid-cols-3"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Risk Distribution
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Risk distribution across portfolio. 4 segments — A: 45%; B: 30%; C: 15%; D: 10%."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+        <div
+          class="mt-4 space-y-1.5"
+        >
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(34, 197, 94);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                A
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              45
+              %
+            </span>
+          </button>
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(234, 179, 8);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                B
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              30
+              %
+            </span>
+          </button>
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(249, 115, 22);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                C
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              15
+              %
+            </span>
+          </button>
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(239, 68, 68);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                D
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              10
+              %
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm lg:col-span-2"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Return Rate
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          class="flex h-56 flex-col items-center justify-center gap-2 text-center"
+        >
+          <svg
+            class="lucide lucide-trending-up h-8 w-8 text-muted-foreground"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="22 7 13.5 15.5 8.5 10.5 2 17"
+            />
+            <polyline
+              points="16 7 22 7 22 13"
+            />
+          </svg>
+          <p
+            class="text-sm text-muted-foreground"
+          >
+            No return data yet
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook snapshots — AnalyticsCharts (visual regression baselines) > SingleDataPoint 1`] = `
+<div
+  animate="[object Object]"
+  initial="[object Object]"
+  transition="[object Object]"
+>
+  <div
+    class="mb-6 grid gap-6 lg:grid-cols-2"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Portfolio Growth
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Portfolio growth over time. 1 data points — Jun: $5,000."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Yield Earned
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Monthly yield earned. 1 data points — Jun: $80."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="grid gap-6 lg:grid-cols-3"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Risk Distribution
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Risk distribution across portfolio. 1 segments — A: 100%."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+        <div
+          class="mt-4 space-y-1.5"
+        >
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(34, 197, 94);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                A
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              100
+              %
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm lg:col-span-2"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Return Rate
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Monthly return rate. 1 data points — Jun: 2%."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook snapshots — AnalyticsCharts (visual regression baselines) > WithExportButtons 1`] = `
+<div
+  animate="[object Object]"
+  initial="[object Object]"
+  transition="[object Object]"
+>
+  <div
+    class="mb-6 grid gap-6 lg:grid-cols-2"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Portfolio Growth
+        </h3>
+        <button
+          aria-label="Export portfolio data"
+          class="rounded-md p-2 hover:bg-muted transition-colors"
+          type="button"
+        >
+          <svg
+            class="lucide lucide-download h-4 w-4 text-muted-foreground hover:text-foreground"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+            />
+            <polyline
+              points="7 10 12 15 17 10"
+            />
+            <line
+              x1="12"
+              x2="12"
+              y1="15"
+              y2="3"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Portfolio growth over time. 6 data points — Jan: $10,000; Feb: $28,000; Mar: $45,000; Apr: $72,000; May: $95,000; Jun: $130,000."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Yield Earned
+        </h3>
+        <button
+          aria-label="Export yield data"
+          class="rounded-md p-2 hover:bg-muted transition-colors"
+          type="button"
+        >
+          <svg
+            class="lucide lucide-download h-4 w-4 text-muted-foreground hover:text-foreground"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+            />
+            <polyline
+              points="7 10 12 15 17 10"
+            />
+            <line
+              x1="12"
+              x2="12"
+              y1="15"
+              y2="3"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Monthly yield earned. 6 data points — Jan: $150; Feb: $420; Mar: $680; Apr: $1,100; May: $1,600; Jun: $2,200."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="grid gap-6 lg:grid-cols-3"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Risk Distribution
+        </h3>
+        <button
+          aria-label="Export risk data"
+          class="rounded-md p-2 hover:bg-muted transition-colors"
+          type="button"
+        >
+          <svg
+            class="lucide lucide-download h-4 w-4 text-muted-foreground hover:text-foreground"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+            />
+            <polyline
+              points="7 10 12 15 17 10"
+            />
+            <line
+              x1="12"
+              x2="12"
+              y1="15"
+              y2="3"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Risk distribution across portfolio. 4 segments — A: 45%; B: 30%; C: 15%; D: 10%."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+        <div
+          class="mt-4 space-y-1.5"
+        >
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(34, 197, 94);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                A
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              45
+              %
+            </span>
+          </button>
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(234, 179, 8);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                B
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              30
+              %
+            </span>
+          </button>
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(249, 115, 22);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                C
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              15
+              %
+            </span>
+          </button>
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            disabled=""
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(239, 68, 68);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                D
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              10
+              %
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm lg:col-span-2"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Return Rate
+        </h3>
+        <button
+          aria-label="Export return data"
+          class="rounded-md p-2 hover:bg-muted transition-colors"
+          type="button"
+        >
+          <svg
+            class="lucide lucide-download h-4 w-4 text-muted-foreground hover:text-foreground"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+            />
+            <polyline
+              points="7 10 12 15 17 10"
+            />
+            <line
+              x1="12"
+              x2="12"
+              y1="15"
+              y2="3"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Monthly return rate. 6 data points — Jan: 1.5%; Feb: 1.8%; Mar: 2.1%; Apr: 1.9%; May: 2.4%; Jun: 2.6%."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook snapshots — AnalyticsCharts (visual regression baselines) > WithRiskDrillDown 1`] = `
+<div
+  animate="[object Object]"
+  initial="[object Object]"
+  transition="[object Object]"
+>
+  <div
+    class="mb-6 grid gap-6 lg:grid-cols-2"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Portfolio Growth
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Portfolio growth over time. 6 data points — Jan: $10,000; Feb: $28,000; Mar: $45,000; Apr: $72,000; May: $95,000; Jun: $130,000."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Yield Earned
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Monthly yield earned. 6 data points — Jan: $150; Feb: $420; Mar: $680; Apr: $1,100; May: $1,600; Jun: $2,200."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="grid gap-6 lg:grid-cols-3"
+  >
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Risk Distribution
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Risk distribution across portfolio. 4 segments — A: 45%; B: 30%; C: 15%; D: 10%."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+        <div
+          class="mt-4 space-y-1.5"
+        >
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(34, 197, 94);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                A
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              45
+              %
+            </span>
+          </button>
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(234, 179, 8);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                B
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              30
+              %
+            </span>
+          </button>
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(249, 115, 22);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                C
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              15
+              %
+            </span>
+          </button>
+          <button
+            class="flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs transition-colors hover:bg-muted/60 disabled:cursor-default disabled:hover:bg-transparent"
+            type="button"
+          >
+            <div
+              class="flex items-center gap-2"
+            >
+              <div
+                class="h-2.5 w-2.5 rounded-full"
+                style="background-color: rgb(239, 68, 68);"
+              />
+              <span
+                class="text-muted-foreground"
+              >
+                D
+              </span>
+            </div>
+            <span
+              class="font-medium text-foreground"
+            >
+              10
+              %
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl border border-border bg-card/60 backdrop-blur-sm lg:col-span-2"
+    >
+      <div
+        class="gap-1.5 p-6 flex flex-row items-center justify-between"
+      >
+        <h3
+          class="font-semibold text-foreground text-base"
+        >
+          Monthly Return Rate
+        </h3>
+      </div>
+      <div
+        class="p-6 pt-0"
+      >
+        <div
+          aria-label="Monthly return rate. 6 data points — Jan: 1.5%; Feb: 1.8%; Mar: 2.1%; Apr: 1.9%; May: 2.4%; Jun: 2.6%."
+          role="img"
+        >
+          <div
+            style="width: 800px; height: 400px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

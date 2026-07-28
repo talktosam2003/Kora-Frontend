@@ -3,50 +3,19 @@ import { Buffer } from "node:buffer";
 import { verifyUploadToken } from "@/lib/security";
 import { logger } from "@/lib/logger";
 import { verifyCsrf } from "@/lib/csrf";
+import { checkRateLimit } from "@/lib/rateLimit";
 
 const PINATA_BASE = "https://api.pinata.cloud";
 const PINATA_JWT = process.env.PINATA_JWT ?? "";
 const VIRUSTOTAL_API_KEY = process.env.VIRUSTOTAL_API_KEY ?? "";
 
-// In-memory rate limit store: walletAddress -> timestamps (ms)
-const RATE_LIMIT_WINDOW = 1000 * 60 * 60; // 1 hour
-const RATE_LIMIT_MAX = 10;
-const rateLimitMap = new Map<string, number[]>();
-
-// In-memory rate limit store: clientIP -> timestamps (ms)
-// Note: This in-memory storage is suitable only for a single-instance deployment.
-// In a multi-instance (autoscaled or serverless) environment, the rate limit state
-// will not be shared across instances. For multi-instance, use a centralized store like Redis.
+// Rate limit configuration
+// Distributed across instances via Redis when REDIS_URL is set; falls back
+// to in-memory for local dev / single-instance environments.
 const IP_RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
 const IP_RATE_LIMIT_MAX = 10;
-const ipRateLimitMap = new Map<string, number[]>();
-
-function resetIpRateLimit() {
-  ipRateLimitMap.clear();
-}
-
-if (typeof global !== "undefined") {
-  (global as any).__resetIpRateLimit = resetIpRateLimit;
-}
-
-function checkIpRateLimit(ip: string): { allowed: boolean; retryAfter?: number } {
-  const now = Date.now();
-  const timestamps = ipRateLimitMap.get(ip) || [];
-  
-  // Filter out expired timestamps
-  const recent = timestamps.filter((t) => t > now - IP_RATE_LIMIT_WINDOW);
-  
-  if (recent.length >= IP_RATE_LIMIT_MAX) {
-    const oldestTimestamp = recent[0];
-    const timeRemainingMs = oldestTimestamp + IP_RATE_LIMIT_WINDOW - now;
-    const retryAfter = Math.max(1, Math.ceil(timeRemainingMs / 1000));
-    return { allowed: false, retryAfter };
-  }
-  
-  recent.push(now);
-  ipRateLimitMap.set(ip, recent);
-  return { allowed: true };
-}
+const WALLET_RATE_LIMIT_WINDOW = 1000 * 60 * 60; // 1 hour
+const WALLET_RATE_LIMIT_MAX = 10;
 
 type VirusScanResult =
   | { ok: true; note?: string }
@@ -129,33 +98,26 @@ async function virusScan(buffer: Buffer, filename: string): Promise<VirusScanRes
   }
 }
 
-function checkRateLimit(wallet: string) {
-  const now = Date.now();
-  const arr = rateLimitMap.get(wallet) || [];
-  const recent = arr.filter((t) => t > now - RATE_LIMIT_WINDOW);
-  if (recent.length >= RATE_LIMIT_MAX) return false;
-  recent.push(now);
-  rateLimitMap.set(wallet, recent);
-  return true;
-}
-
 export async function POST(req: NextRequest) {
   const requestId = (req as Request & { headers: Headers }).headers.get("x-request-id") ?? crypto.randomUUID();
 
   const csrfError = verifyCsrf(req);
   if (csrfError) return csrfError;
 
-  // 1. IP rate limiting (10 req/min)
+  // 1. IP rate limiting (10 req/min) — distributed via Redis when available
   const forwardedFor = req.headers.get("x-forwarded-for");
   const clientIp = forwardedFor ? forwardedFor.split(",")[0].trim() : "127.0.0.1";
-  const limitResult = checkIpRateLimit(clientIp);
-  if (!limitResult.allowed) {
+  const ipLimitResult = await checkRateLimit(`ip:${clientIp}`, {
+    windowMs: IP_RATE_LIMIT_WINDOW,
+    max: IP_RATE_LIMIT_MAX,
+  });
+  if (!ipLimitResult.allowed) {
     return NextResponse.json(
       { error: "Too many requests. Please try again later.", requestId },
       {
         status: 429,
         headers: {
-          "Retry-After": String(limitResult.retryAfter ?? 60),
+          "Retry-After": String(ipLimitResult.retryAfter ?? 60),
         },
       }
     );
@@ -187,9 +149,21 @@ export async function POST(req: NextRequest) {
       if (!file) return NextResponse.json({ error: "file is required", requestId }, { status: 400 });
       if (!wallet) return NextResponse.json({ error: "walletAddress is required", requestId }, { status: 400 });
 
-      // Rate limit per wallet
-      if (!checkRateLimit(wallet)) {
-        return NextResponse.json({ error: "Rate limit exceeded", requestId }, { status: 429 });
+      // Rate limit per wallet+IP composite key — distributed via Redis when available
+      const walletLimitResult = await checkRateLimit(`${wallet}:${clientIp}`, {
+        windowMs: WALLET_RATE_LIMIT_WINDOW,
+        max: WALLET_RATE_LIMIT_MAX,
+      });
+      if (!walletLimitResult.allowed) {
+        return NextResponse.json(
+          { error: "Rate limit exceeded", requestId },
+          {
+            status: 429,
+            headers: {
+              "Retry-After": String(walletLimitResult.retryAfter ?? 3600),
+            },
+          }
+        );
       }
 
       const arrayBuffer = await file.arrayBuffer();
@@ -237,8 +211,20 @@ export async function POST(req: NextRequest) {
 
       if (!wallet || !metadata) return NextResponse.json({ error: "walletAddress and metadata are required", requestId }, { status: 400 });
 
-      if (!checkRateLimit(wallet)) {
-        return NextResponse.json({ error: "Rate limit exceeded", requestId }, { status: 429 });
+      const walletJsonLimitResult = await checkRateLimit(`${wallet}:${clientIp}`, {
+        windowMs: WALLET_RATE_LIMIT_WINDOW,
+        max: WALLET_RATE_LIMIT_MAX,
+      });
+      if (!walletJsonLimitResult.allowed) {
+        return NextResponse.json(
+          { error: "Rate limit exceeded", requestId },
+          {
+            status: 429,
+            headers: {
+              "Retry-After": String(walletJsonLimitResult.retryAfter ?? 3600),
+            },
+          }
+        );
       }
 
       // Optional: could run lightweight metadata checks here
